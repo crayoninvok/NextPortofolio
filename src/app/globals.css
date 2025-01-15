@@ -1,3 +1,4 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,5 +24,128 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+ /* Glowing Text Utility */
+ .glowing-text-green {
+   text-shadow: 0 0 8px #00ffab, 0 0 16px #00ffab, 0 0 24px #00ffab;
+   color: #ffffff;
+ }
+
+ /* Shadow Glow Utility */
+ .shadow-glow {
+   box-shadow: 0 0 10px #1bc260, 0 0 20px #1bc260, 0 0 30px #1bc260;
+ }
+
+ .hover\:shadow-glow:hover {
+   box-shadow: 0 0 10px #ff9500, 0 0 20px #ff9500, 0 0 30px #ff9500;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,700;1,500;1,600;1,700&family=Comfortaa&display=swap');
+
+ body {
+   font-family: 'Comfortaa', sans-serif;
+
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: 'Chakra Petch', sans-serif;
+  
+ }
+
+ 
+.loader {
+  position: relative;
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 120px;
+  /* Increase size to accommodate "DZ" */
+  height: 120px;
+  /* Same as width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  /* Make background transparent */
+  color: #fff;
+  font-size: 2rem;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  font-family: 'Comfortaa', sans-serif;
+  /* Choose your font */
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+
+.loader:after {
+  color: #00ffab;
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
+
+.loader-text {
+  position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 10;
+    transform: rotateZ(-45deg);
+    text-align: center;
+}
+
+@keyframes spin {
+
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
   }
 }
