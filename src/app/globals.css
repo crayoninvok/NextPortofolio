@@ -137,3 +137,73 @@
     box-shadow: .2em -.2em 0 0 currentcolor;
   }
 }
+
+/* Tailwind utilities for custom animations */
+
+/* Perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* 3D Transformations for Flip */
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Flip Effect */
+.card-wrap {
+  perspective: 1000px;
+  /* Adds depth */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card .card-front,
+.card .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.card-front {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #333;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  /* Initially hidden on the back */
+}
+
+/* Hover Effects */
+.card-wrap:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-wrap:hover .card-back {
+  transform: rotateY(0deg);
+}
