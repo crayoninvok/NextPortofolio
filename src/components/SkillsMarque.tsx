@@ -9,8 +9,9 @@ import {
   SiTypescript,
   SiTailwindcss,
 } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoBarChart, IoLogoJavascript } from "react-icons/io5";
 import { Chakra_Petch } from "next/font/google";
+import { IoCog } from "react-icons/io5";
 
 const chakrapetch = Chakra_Petch({
   weight: ["300", "400", "500", "600", "700"],
@@ -50,6 +51,14 @@ const icons = [
   {
     component: <IoLogoJavascript size={40} className="text-yellow-400" />,
     label: "JavaScript",
+  },
+  {
+    component: <IoCog size={40} className="text-gray-500" />,
+    label: "PLC Logic",
+  },
+  {
+    component: <IoBarChart size={40} className="text-orange-600" />,
+    label: "MatLab",
   },
 ];
 

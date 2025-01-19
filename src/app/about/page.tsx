@@ -6,6 +6,7 @@ import TechnologiesMarquee from "@/components/SkillsMarque";
 import WorkExperienceCard from "@/components/WorkExperience";
 import CertificationCard from "@/components/CertificationCard"; // Import CertificationCard
 import { Chakra_Petch } from "next/font/google";
+import MyProject from "@/components/MyProject";
 const chakrapetch = Chakra_Petch({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
@@ -37,9 +38,14 @@ export default function AboutPage() {
             previewImageUrl="/fsg.jpg" 
             certificateImageUrl="/fsgcert.jpg" 
           />
-     
+          <CertificationCard
+            title="Full-Stack Web Development endorsed by Purwadhika Digital Technology School."
+            previewImageUrl="/pwdk.jpg" 
+            certificateImageUrl="/" 
+          />
         </div>
       </div>
+      <MyProject />
       <TechnologiesMarquee />
     </div>
   );
