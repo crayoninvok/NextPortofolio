@@ -21,8 +21,12 @@ export default function AboutPage() {
       <WorkExperienceCard />
       {/* Certification Section */}
       <div className="w-full mt-12">
-        <h2 className={`${chakrapetch.className} text-[35px] text-center font-bold text-white mb-6`}>My Certifications</h2>
-        <div className="flex gap-6 justify-center">
+        <h2
+          className={`${chakrapetch.className} text-[35px] text-center font-bold text-white mb-6`}
+        >
+          My Certifications
+        </h2>
+        <div className="flex flex-wrap gap-6 justify-center">
           <CertificationCard
             title="Process Measurement Instrumentation endorsed by Yokogawa Indonesia"
             previewImageUrl="/yokogawa.jpg" // Replace with the preview image path
@@ -35,13 +39,13 @@ export default function AboutPage() {
           />
           <CertificationCard
             title="Voyage Data Recorder Engineer endorsed by Furuno Singapore."
-            previewImageUrl="/fsg.jpg" 
-            certificateImageUrl="/fsgcert.jpg" 
+            previewImageUrl="/fsg.jpg"
+            certificateImageUrl="/fsgcert.jpg"
           />
           <CertificationCard
             title="Full-Stack Web Development endorsed by Purwadhika Digital Technology School."
-            previewImageUrl="/pwdk.jpg" 
-            certificateImageUrl="/" 
+            previewImageUrl="/pwdk.jpg"
+            certificateImageUrl="/"
           />
         </div>
       </div>

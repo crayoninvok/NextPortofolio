@@ -3,7 +3,7 @@ const companies = [
   {
     name: "Indonesia Aerospace(IAe)",
     image: "/PTDI.jpg", // Add your actual image path here
-    role: "Intern Avionic Electric & Instrumentation Engineer",
+    role: "Intern Avionic, Electric & Instrumentation Engineer",
     description:
       "I worked on building scalable web applications, focusing on front-end development with React and TypeScript. Responsible for improving performance and implementing new features.",
   },
