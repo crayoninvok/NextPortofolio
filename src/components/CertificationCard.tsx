@@ -26,7 +26,7 @@ export default function CertificationCard({
         <Image
           src={previewImageUrl}
           alt={title}
-          layout="fill"
+          fill
           objectFit="cover"
           className="rounded-lg"
         />
@@ -55,7 +55,7 @@ export default function CertificationCard({
             <Image
               src={certificateImageUrl}
               alt={title}
-              layout="fill"
+              fill
               objectFit="contain"
             />
             <button

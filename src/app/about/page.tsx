@@ -19,7 +19,6 @@ export default function AboutPage() {
       <AboutContent />
       <Timeline />
       <WorkExperienceCard />
-      {/* Certification Section */}
       <div className="w-full mt-12">
         <h2
           className={`${chakrapetch.className} text-[35px] text-center font-bold text-white mb-6`}
